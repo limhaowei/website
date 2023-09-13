@@ -4,7 +4,6 @@ body, h1, h2, p {
     padding: 0;
 }
 
-/* Set a background color and text color for the entire page */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -14,7 +13,6 @@ body {
     padding: 0;
 }
 
-/* header */
 header {
     background-color: #333;
     color: #fff;
@@ -30,7 +28,6 @@ header p {
     font-size: 1.2rem;
 }
 
-/*navigation menu */
 nav ul {
     list-style-type: none;
     text-align: center;
@@ -48,12 +45,20 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* main content sections */
 main {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: #fff;
+    opacity: 0;
+    animation: fade-in 1s ease forwards;
+}
+
+/* specifies how element should look like during animation */
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
 }
 
 main h2 {
@@ -67,22 +72,6 @@ main p {
     margin-bottom: 1.5rem;
 }
 
-/* portfolio items */
-.portfolio-item {
-    margin-bottom: 2rem;
-}
-
-.portfolio-item img {
-    max-width: 100%;
-    height: auto;
-}
-
-.portfolio-item h3 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
-
-/* footer */
 footer {
     background-color: #333;
     color: #fff;
